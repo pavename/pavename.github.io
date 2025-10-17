@@ -244,18 +244,31 @@ background-color: #0056b3;
 
 <div class="form-container">
 <!-- Your form elements here -->
-<form action="https://formsubmit.co/orders@pave.name" method="POST">
-    
-<input type="hidden" name="_autoresponse" value="Thank you for placing an order!">  
-<input type="hidden" name="_captcha" value="false">  
-<input type="hidden" name="_cc" value="another@email.com, yetanother@email.com">
-<input type="hidden" name="_subject" value="New Order!">
-<input type="hidden" name="_next" value="https://pave.name">
-<input type="text" name="name" placeholder="Your Full Name" required>
-<input type="email" name="email" placeholder="Your Invoiceable Email" required>
-<textarea name="message" placeholder="The product no, the length, the material, the text, and any other message." rows="3" required></textarea>
-<button type="submit">Place Order</button>
-</form>
+
+  <form action="https://formsubmit.co/orders@pave.name" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+          
+           <div class="col">
+        <input type="hidden" name="_next" value="https://pave.name">
+        </div>
+          <div class="col">
+         <input type="hidden" name="_captcha" value="false">
+        </div>
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Your Invoiceable Email" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="The product no, the length, the material, the text, and any other message." class="form-control" name="message" rows="2" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Place Order</button>
+  </form>
+
 </div>
 
  <div>
